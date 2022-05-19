@@ -1,6 +1,9 @@
 describe('Visitor  can ', () => {
   describe('see the website header', () => {
     beforeEach(() => {
+      cy.intercept('GET', '/data.js', {
+        fixture: 'courses.json',
+      })
       cy.visit('/')
     })
 
@@ -16,13 +19,13 @@ describe('Visitor  can ', () => {
       cy.get('[data-cy=menu-testing]').should('contain.text', 'Testing')
     })
 
-
     it('user can click to various courses', () => {
-        cy.get('[data-cy=menu-testing]').click()
-        cy.get('[data-cy=course-header]').should('contain.text', 'Testing')
-      })
+      cy.get('[data-cy=menu-testing]').click()
+      cy.get('[data-cy=course-header]').should('contain.text', 'Testing')
+    })
 
-
-
+    it('use can see all course content on home page', () => {
+      cy.get('[data-cy=menu-testing]')
+    })
   })
 })
