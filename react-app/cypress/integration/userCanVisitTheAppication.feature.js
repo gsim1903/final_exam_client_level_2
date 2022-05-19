@@ -13,7 +13,16 @@ describe('Visitor  can ', () => {
     })
 
     it('is see various sections', () => {
-        cy.get('[data-cy=menu-testing]').should('contain.text', 'Testing')
+      cy.get('[data-cy=menu-testing]').should('contain.text', 'Testing')
+    })
+
+
+    it('user can click to various courses', () => {
+        cy.get('[data-cy=menu-testing]').click()
+        cy.get('[data-cy=course-header]').should('contain.text', 'Testing')
       })
+
+
+
   })
 })

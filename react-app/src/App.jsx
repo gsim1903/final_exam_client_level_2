@@ -1,6 +1,10 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './app.css'
+import CourseDisplay from './Components/Coursedisplay'
+import Coursehome from './Components/Coursehome'
 import Navbar from './Components/Navbar'
+
 
 const App = () => {
   return (
@@ -10,6 +14,10 @@ const App = () => {
         COURSE LIST
       </h1>
       <Navbar />
+      <Routes>
+        <Route path="/" element={<Coursehome />} />
+        <Route path="/:course" element={<CourseDisplay />} />
+      </Routes>
     </>
   )
 }

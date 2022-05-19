@@ -1,14 +1,20 @@
+import React from "react";
 import { Menu, Segment } from 'semantic-ui-react'
 import { NavLink, Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
-
+// import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-  const navigate = useNavigate()
+
 
   return (
-    <Segment align="center" inverted color="blue">
+    <Segment align="center"color="blue">
       <Menu inverted secondary>
+      <Menu.Item
+          data-cy="home-tab"
+          name="all"
+          as={Link}
+          to={{ pathname: "/" }}
+        />
         <Menu.Item
           data-cy="menu-workshop"
           name="Workshops"
@@ -21,6 +27,13 @@ const Navbar = () => {
           as={NavLink}
           to={{ pathname: '/Testing' }}
         />
+        <Menu.Item name="Vue" as={NavLink} to={{ pathname: '/Vue' }} />
+        <Menu.Item
+          name="Productivity"
+          as={NavLink}
+          to={{ pathname: '/Productivity' }}
+        />
+        <Menu.Item name="React" as={NavLink} to={{ pathname: '/React' }} />
       </Menu>
     </Segment>
   )
