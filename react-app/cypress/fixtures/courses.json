@@ -16,7 +16,7 @@
     {
       "title": "Test Automation using Cypress",
       "slug": "cypress_1",
-      "category": "testing",
+      "category": "Testing",
       "dates": [
         "10-11 November 2020 - Stockholm",
         "17-18 November 2020 - Gothenburg"
@@ -30,7 +30,7 @@
     {
       "title": "Introduction to VUE3",
       "slug": "intro_vue3",
-      "category": "vue",
+      "category": "Vue",
       "dates": [],
       "price": "13 000 SEK - €1.300",
       "active": true,
@@ -41,7 +41,7 @@
     {
       "title": "Building Web Applications using VUE 3",
       "slug": "advanced_vue3",
-      "category": "vue",
+      "category": "Vue",
       "dates": [],
       "price": "24 500 SEK - €2.450",
       "active": true,
@@ -52,7 +52,7 @@
     {
       "title": "Version Control with Git",
       "slug": "intro_git",
-      "category": "productivity",
+      "category": "Productivity",
       "dates": [],
       "price": "24 500 SEK - €2.450",
       "active": true,
@@ -63,7 +63,7 @@
     {
       "title": "API development with NodeJS",
       "slug": "node_api",
-      "category": "node",
+      "category": "Node",
       "dates": [],
       "price": "35 500 SEK - €3.500",
       "active": true,
@@ -74,7 +74,7 @@
     {
       "title": "ReactJs - Getting Started (2020 edition)",
       "slug": "node_api",
-      "category": "react",
+      "category": "React",
       "dates": [],
       "price": "24 500 SEK - €2.450",
       "active": true,

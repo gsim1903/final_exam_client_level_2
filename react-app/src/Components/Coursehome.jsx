@@ -20,6 +20,9 @@ const Coursehome = () => {
     })
     return coursesArray.flat()
   }
+
+
+
   const CoursesCollection = displayCourses(courses).map((course) => {
     return (
       <div data-cy="course-header">

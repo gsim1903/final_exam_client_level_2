@@ -1,14 +1,16 @@
 import React from "react";
 import { Menu, Segment } from 'semantic-ui-react'
 import { NavLink, Link } from 'react-router-dom'
+import '/Users/gavinsimpson/final_exam_client_level_2/react-app/src/app.css'
+
 // import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
 
   return (
-    <Segment align="center"color="blue">
-      <Menu inverted secondary>
+    <Segment align="center"color="blue" classname="bold">
+      <Menu inverted secondary classname="bold">
       <Menu.Item
           data-cy="home-tab"
           name="all"

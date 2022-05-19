@@ -24,6 +24,7 @@ const CourseDisplay = () => {
     return coursesArray.flat()
   }
 
+  
   const OneCoursesCollection = displayCourses(courses)
     ?.filter((object) => object['category'] === `${course}`)
     .map((course) => {
